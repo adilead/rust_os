@@ -10,7 +10,10 @@ use rust_os::println;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
+    rust_os::init();
     println!("RUST OS started successfully{}", "!");
+
+
 
     #[cfg(test)]
     test_main();
