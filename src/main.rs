@@ -13,13 +13,11 @@ pub extern "C" fn _start() -> ! {
     rust_os::init();
     println!("RUST OS started successfully{}", "!");
 
-
-
     #[cfg(test)]
     test_main();
 
+    rust_os::hlt_loop();
 
-    loop {}
 }
 
 /// This function is called on panic.
