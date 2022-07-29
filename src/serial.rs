@@ -1,7 +1,6 @@
 use uart_16550::SerialPort;
 use spin::Mutex;
 use lazy_static::lazy_static;
-use core::fmt;
 
 const SERIAL_IO_PORT_COM1: u16 = 0x3F8;
 
